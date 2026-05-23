@@ -1,0 +1,149 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f4f7f6;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+}
+
+.container {
+    background: #ffffff;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.05);
+    width: 100%;
+    max-width: 400px;
+    transition: 0.3s;
+}
+
+h1 {
+    color: #333;
+    margin-top: 0;
+    margin-bottom: 20px;
+    font-size: 24px;
+    text-align: center;
+}
+
+#task-form {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 15px;
+}
+
+#new-item-input {
+    flex: 1;
+    padding: 10px 14px;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    font-size: 14px;
+    outline: none;
+    transition: border-color 0.2s;
+}
+
+#new-item-input:focus {
+    border-color: #007bff;
+}
+
+button[type="submit"] {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 10px 16px;
+    border-radius: 6px;
+    cursor: pointer;
+    font-weight: 600;
+    transition: background 0.2s;
+}
+
+button[type="submit"]:hover {
+    background-color: #0056b3;
+}
+
+#status-filter {
+    width: 100%;
+    padding: 8px 12px;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    background-color: #fff;
+    margin-bottom: 20px;
+    font-size: 14px;
+    color: #555;
+    outline: none;
+}
+
+#master-task-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.row-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 14px;
+    background: #ffffff;
+    border-radius: 6px;
+    margin-bottom: 8px;
+    border: 1px solid #e2e8f0;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.02);
+}
+
+.task-main {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.label-text {
+    font-size: 15px;
+    color: #333;
+}
+
+.row-item.done .label-text {
+    text-decoration: line-through;
+    color: #aaa;
+}
+
+.btn-group {
+    display: flex;
+    gap: 6px;
+}
+
+.action-trigger {
+    border: none;
+    padding: 6px 10px;
+    border-radius: 4px;
+    font-size: 12px;
+    cursor: pointer;
+    font-weight: 500;
+}
+
+.action-trigger.modify {
+    background-color: #e2e8f0;
+    color: #4a5568;
+}
+
+.action-trigger.modify:hover {
+    background-color: #cbd5e1;
+}
+
+.action-trigger.remove {
+    background-color: #fee2e2;
+    color: #dc2626;
+}
+
+.action-trigger.remove:hover {
+    background-color: #fca5a5;
+}
+
+.empty-msg {
+    text-align: center;
+    color: #888;
+   padding: 14px;
+}
+.row-item:hover{
+    transform: translateY(-2px);
+}
